@@ -18,7 +18,7 @@ jobs:
       - name: Install project dependencies
         run: yarn --prefer-offline
       - name: build project
-        run: yarn deploy
+        run: yarn build-gh-pages
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:

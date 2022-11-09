@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "deploy": "tsc && vite build --base=/action-to-pages/",
+    "build-gh-pages": "tsc && vite build --base=/action-to-pages/",
     "preview": "vite preview"
   },
   "dependencies": {
