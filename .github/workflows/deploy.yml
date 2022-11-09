@@ -18,12 +18,7 @@ jobs:
       - name: Install project dependencies
         run: yarn --prefer-offline
       - name: build project
-        run: yarn build
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: artifact
-          path: dist
+        run: yarn deploy
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
