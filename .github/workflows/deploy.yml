@@ -32,7 +32,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: artifact
-      - name: Output contents
-        run: ls
-      - name: Deploy to server
-        run: echo "Deploy to server"
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
